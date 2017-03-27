@@ -2,7 +2,7 @@
 base_test::filebeat_prospectors:
   'syslog-module':
     paths:
-      - '/var/log/messages'
+      - '/var/log/testfile'
     input_type: 'log'
     fields_under_root: 'true'
     fields:
