@@ -2,4 +2,4 @@ filebeat::outputs:
   logstash:
     hosts:
       - 'logstash.domain.local:9001'
-notify_test::message: 'common'
+notify_message: 'common'

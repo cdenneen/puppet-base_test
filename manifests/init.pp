@@ -1,4 +1,8 @@
-class base_test {
+class base_test(
+  $notify_message = 'base'
+) {
   #class {'filebeat':}
-  include notify_test
+  class {'notify_test':
+    message => $notify_message
+  }
 }
