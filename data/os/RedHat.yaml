@@ -1,0 +1,10 @@
+---
+filebeat::prospectors:
+  'syslog':
+    paths:
+      - '/var/log/messages'
+    input_type: 'log'
+    fields_under_root: 'true'
+    fields:
+      appenv: 'dev'
+    doc_type: 'syslog'

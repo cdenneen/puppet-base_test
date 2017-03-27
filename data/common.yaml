@@ -1,0 +1,4 @@
+filebeat::outputs:
+  logstash:
+    hosts:
+      - 'logstash.domain.local:9001'

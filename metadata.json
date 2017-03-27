@@ -1,0 +1,30 @@
+{
+  "author": "cdenneen",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.15.0"},
+    {"name":"pcfens-filebeat","version_requirement":">= 0.10.2"}
+  ],
+  "data_provider": "hiera",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04",
+        "16.04"
+      ]
+    }
+  ],
+  "license": "Apache-2.0",
+  "name": "puppet-base_test",
+  "project_page": "",
+  "source": "https://github.com/cdenneen/puppet-base_test.git",
+  "summary": "Base Profile Module",
+  "version": "1.0.0"
+}
