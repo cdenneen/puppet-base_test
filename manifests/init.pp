@@ -3,7 +3,8 @@ class base_test(
   $filebeat_prospectors = {}
 ) {
   class {'filebeat':
-    prospectors => $filebeat_prospectors
+    prospectors       => $filebeat_prospectors,
+    prospectors_merge => true
   }
   class {'notify_test':
     message => $notify_message
