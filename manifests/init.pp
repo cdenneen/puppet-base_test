@@ -1,4 +1,4 @@
 class base_test {
-  class {'filebeat':}
+  #class {'filebeat':}
   class {'notify_test':}
 }
