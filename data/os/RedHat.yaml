@@ -1,11 +1,10 @@
 ---
 base_test::filebeat_prospectors:
-  filebeat::prospectors:
-    'syslog-module':
-      paths:
-        - '/var/log/testfile'
-      input_type: 'log'
-      fields_under_root: 'true'
-      fields:
-        appenv: 'dev'
-      doc_type: 'syslog'
+  'syslog-module':
+    paths:
+      - '/var/log/testfile'
+    input_type: 'log'
+    fields_under_root: 'true'
+    fields:
+      appenv: 'dev'
+    doc_type: 'syslog'
