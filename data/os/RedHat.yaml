@@ -1,6 +1,6 @@
 ---
-filebeat::prospectors:
-  'syslog':
+base_test::filebeat_prospectors:
+  'syslog-module':
     paths:
       - '/var/log/messages'
     input_type: 'log'
